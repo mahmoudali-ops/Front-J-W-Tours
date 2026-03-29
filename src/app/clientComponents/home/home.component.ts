@@ -204,6 +204,34 @@ videoFallback = false;
   }
   
 
+  trips = [
+    {
+      image: '../../../assets/images/abo1.jpeg'
+    },
+    {
+      image: '../../../assets/images/abo2.jpeg'
+    },
+    {
+      image: '../../../assets/images/abo3.jpeg'
+    },
+    {
+      image: '../../../assets/images/abo4.jpeg'
+    },
+    {
+      image: '../../../assets/images/abo5.jpeg'
+    }
+  ];
 
+  isExpanded = false;
+
+  tripDescription: string = `Snorkeling with sea turtles in their natural habitat. 
+Explore colorful coral reefs and fish. Relax on the sandy beach of Abu Dabbab. 
+Perfect spot for underwater photos. Hotel pickup & drop-off. Air-conditioned transport. 
+Professional guide. Snorkeling equipment. Lunch & soft drinks. Swimwear & towel. 
+Sunglasses & sunscreen. Waterproof camera recommended.`;
+
+  toggleDescription() {
+    this.isExpanded = !this.isExpanded;
+  }
 
 }

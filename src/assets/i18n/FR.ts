@@ -237,11 +237,29 @@ ABOUTSTATSCLIENTS: "Voyageurs Satisfaits Accompagnés",
 ABOUTSTATSTOURS: "Visites & Activités Passionnantes",
 ABOUTSTATSEXPERIENCE: "Années d'Expérience en Voyage",
 ABOUTSTATSRATING: "Note Moyenne des Clients",
-why_this:"Pourquoi cette visite"
+why_this:"Pourquoi cette visite",
+FeaturedExperienceTitle: "✨ Expérience en Vedette",
+FeaturedExperienceSubtitle: "Découvrez l'une de nos aventures marines les plus uniques à Marsa Alam",
+TripTitle: "🐢 Snorkeling avec les Tortues d'Abu Dabbab",
+TripLocation: "Baie d'Abu Dabbab – Marsa Alam",
+TripDescription: "Participez à une aventure de snorkeling inoubliable avec les tortues amicales d'Abu Dabbab. Explorez les récifs coralliens colorés, détendez-vous sur de magnifiques plages de sable et capturez des photos incroyables.",
+ReadMore: "Lire la suite",
+ShowLess: "Réduire",
+HighlightsTitle: "Points Forts",
+HighlightsList1: "Nager avec les tortues",
+HighlightsList2: "Récifs coralliens",
+HighlightsList3: "Plage de sable",
+HighlightsList4: "Spots photo",
+IncludesTitle: "Inclus",
+IncludesList1: "Prise en charge",
+IncludesList2: "Guide",
+IncludesList3: "Équipement",
+IncludesList4: "Déjeuner",
+TripInfoTime: "05:00 - 17:00",
+TripInfoPriceAdult: "£70",
+TripInfoDiscountChild: "50%",
+TripInfoPriceInfant: "£25",
+BookNowButton: "Réservez maintenant"
 
-
-
-
-
-   
-};
+}
+;

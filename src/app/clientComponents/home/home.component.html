@@ -276,7 +276,107 @@ swiper-slide:not(.swiper-slide-active) {
   </section>
   
 
+  <section class="abu-trip-section-pro">
 
+    <!-- TOP TITLE -->
+    <div class="abu-header text-center">
+      <h2 class="abu-main-title">
+        {{ 'FeaturedExperienceTitle' | t }}
+      </h2>
+      <p class="abu-subtitle">
+        {{ 'FeaturedExperienceSubtitle' | t }}
+      </p>
+    </div>
+  
+    <div class="container">
+      <div class="row align-items-center">
+  
+        <!-- LEFT -->
+        <div class="col-lg-6 abu-trip-content">
+  
+          <h3 class="abu-title">
+            {{ 'TripTitle' | t }}
+          </h3>
+  
+          <p class="abu-location">
+            <i class="fas fa-map-marker-alt"></i>
+            {{ 'TripLocation' | t }}
+          </p>
+  
+          <div class="abu-description-container">
+            <!-- HEADER -->
+            <div class="abu-desc-header">
+              <i class="fas fa-info-circle"></i>
+              <h4>{{ 'TripDescriptionHeader' | t }}</h4>
+            </div>
+  
+            <!-- TEXT -->
+            <p class="abu-desc-text" [class.expanded]="isExpanded">
+              {{ 'TripDescription' | t }}
+            </p>
+  
+            <!-- BUTTON -->
+            <button class="abu-readmore-btn" (click)="toggleDescription()">
+              {{ isExpanded ? ('ShowLess' | t) : ('ReadMore' | t) }}
+            </button>
+          </div>
+  
+          <div class="abu-card">
+            <h5><i class="fas fa-star"></i> {{ 'HighlightsTitle' | t }}</h5>
+            <ul>
+              <li><i class="fas fa-check"></i> {{ 'HighlightsList1' | t }}</li>
+              <li><i class="fas fa-fish"></i> {{ 'HighlightsList2' | t }}</li>
+              <li><i class="fas fa-umbrella-beach"></i> {{ 'HighlightsList3' | t }}</li>
+              <li><i class="fas fa-camera"></i> {{ 'HighlightsList4' | t }}</li>
+            </ul>
+          </div>
+  
+          <div class="abu-card">
+            <h5><i class="fas fa-gift"></i> {{ 'IncludesTitle' | t }}</h5>
+            <ul>
+              <li><i class="fas fa-bus"></i> {{ 'IncludesList1' | t }}</li>
+              <li><i class="fas fa-user"></i> {{ 'IncludesList2' | t }}</li>
+              <li><i class="fas fa-water"></i> {{ 'IncludesList3' | t }}</li>
+              <li><i class="fas fa-utensils"></i> {{ 'IncludesList4' | t }}</li>
+            </ul>
+          </div>
+  
+          <div class="abu-info">
+            <span><i class="fas fa-clock"></i> {{ 'TripInfoTime' | t }}</span>
+            <span><i class="fas fa-user"></i> {{ 'TripInfoPriceAdult' | t }}</span>
+            <span><i class="fas fa-child"></i> {{ 'TripInfoDiscountChild' | t }}</span>
+            <span><i class="fas fa-baby"></i> {{ 'TripInfoPriceInfant' | t }}</span>
+          </div>
+  
+          <button class="abu-btn">{{ 'BookNowButton' | t }}</button>
+  
+        </div>
+  
+        <!-- RIGHT -->
+        <div class="col-lg-6">
+          <swiper-container
+            class="abuSwiperPro"
+            loop="true"
+            autoplay-delay="3500"
+            autoplay-disable-on-interaction="false"
+            speed="1200"
+            effect="fade"
+            fade-effect-cross-fade="true"
+            pagination="true"
+            navigation="true">
+  
+            <swiper-slide><img src="../../../assets/images/abo1.jpeg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/images/abo2.jpeg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/images/abo3.jpeg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/images/abo4.jpeg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/images/abo5.jpeg" /></swiper-slide>
+  
+          </swiper-container>
+        </div>
+  
+      </div>
+    </div>
+  </section>
   
 
   <section class="services-section py-5 bg-light">

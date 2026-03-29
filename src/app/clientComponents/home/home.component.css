@@ -3015,4 +3015,230 @@ swiper-slide * {
     transform: none;
     box-shadow: 0 10px 20px rgba(255,140,0,0.3);
   }
+}/* ===== BACKGROUND ANIMATION ===== */
+.abu-trip-section-pro {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background: linear-gradient(120deg, #ffffff, #fff7ed, #ffe4d6);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* animated gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* floating glow */
+.abu-trip-section-pro::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 115, 0, 0.15);
+  filter: blur(120px);
+  top: -100px;
+  left: -100px;
+  animation: floatGlow 8s infinite alternate;
+}
+
+@keyframes floatGlow {
+  from { transform: translate(0,0); }
+  to { transform: translate(80px, 60px); }
+}
+
+/* ===== HEADER ===== */
+.abu-header {
+  margin-bottom: 60px;
+}
+
+.abu-main-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+}
+
+.abu-subtitle {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* ===== TEXT ===== */
+.abu-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.abu-location {
+  color: #f97316;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* ===== CARDS ===== */
+.abu-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.abu-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.abu-card li {
+  color: #334155;
+  font-weight: 500;
+}
+
+.abu-card i {
+  color: #f97316;
+}
+
+/* ===== INFO ===== */
+.abu-info span {
+  background: white;
+  font-weight: 600;
+}
+
+/* ===== BUTTON ===== */
+
+
+
+/* ===== SWIPER ===== */
+.abuSwiperPro {
+  height: 430px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.abuSwiperPro swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+/* zoom effect ناعم */
+.abuSwiperPro swiper-slide-active img {
+  transform: scale(1.1);
+}
+
+/* arrows & bullets */
+.abuSwiperPro::part(bullet) {
+  background: #f97316;
+}
+
+.abuSwiperPro::part(button-next),
+.abuSwiperPro::part(button-prev) {
+  color: #f97316;
+}
+
+/* ===== ANIMATION دخول ===== */
+.abu-trip-content {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .abuSwiperPro {
+    height: 280px;
+  }
+}
+.abu-btn {
+  margin-top: 20px;      /* مسافة من فوق */
+  margin-bottom: 25px;   /* مسافة من تحت */
+  padding: 13px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(270deg, #f97316, #fb923c, #f59e0b, #f97316);
+  background-size: 600% 600%;
+  animation: gradientShift 6s ease infinite;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* حركة التدرج اللوني */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hover effect */
+.abu-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(249,115,22,0.35);
+}
+
+.abu-description-container {
+  margin-top: 25px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #334155;
+}
+
+/* HEADER */
+.abu-desc-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #f97316;
+}
+
+.abu-desc-header i {
+  font-size: 18px;
+}
+
+/* TEXT - استخدام line-clamp لعرض 3 أسطر بدون قص كلمات */
+.abu-desc-text {
+  font-size: 15px;
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* يعرض 3 أسطر */
+  -webkit-box-orient: vertical;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* عند الفتح */
+.abu-desc-text.expanded {
+  -webkit-line-clamp: unset;
+}
+
+/* BUTTON */
+.abu-readmore-btn {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #f97316;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.abu-readmore-btn:hover {
+  color: #fb923c;
 }

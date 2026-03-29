@@ -237,7 +237,29 @@ export const EN = {
   ABOUTSTATSTOURS: "Exciting Tours & Activities",
   ABOUTSTATSEXPERIENCE: "Years of Travel Experience",
   ABOUTSTATSRATING: "Average Customer Rating",
-  why_this:"Why this tour"
+  why_this:"Why this tour",
+  FeaturedExperienceTitle: "✨ Featured Experience",
+  FeaturedExperienceSubtitle: "Discover one of our most unique sea adventures in Marsa Alam",
+  TripTitle: "🐢 Abu Dabbab Turtle Snorkeling",
+  TripLocation: "Abu Dabbab Bay – Marsa Alam",
+  TripDescription: "Join an unforgettable snorkeling adventure with Abu Dabbab's friendly turtles. Explore vibrant coral reefs, relax on pristine sandy beaches, and capture amazing photos along the way.",
+  ReadMore: "Read More",
+  ShowLess: "Show Less",
+  HighlightsTitle: "Highlights",
+  HighlightsList1: "Swim with turtles",
+  HighlightsList2: "Coral reefs",
+  HighlightsList3: "Sandy beach",
+  HighlightsList4: "Photo spots",
+  IncludesTitle: "Includes",
+  IncludesList1: "Pickup",
+  IncludesList2: "Guide",
+  IncludesList3: "Equipment",
+  IncludesList4: "Lunch",
+  TripInfoTime: "05:00 - 17:00",
+  TripInfoPriceAdult: "£70",
+  TripInfoDiscountChild: "50%",
+  TripInfoPriceInfant: "£25",
+  BookNowButton: "Book Now"
   
   
   

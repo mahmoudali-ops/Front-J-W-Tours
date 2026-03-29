@@ -155,7 +155,8 @@
   visibility: hidden;
   transform: translateY(10px);
   transition: 0.3s ease;
-  z-index: 999;
+  z-index: 1001;
+  min-width: 220px;
 }
 
 /* Show on hover */
@@ -707,7 +708,7 @@
 }
 
 .oc-sub.is-open {
-  max-height: 520px;
+  max-height: 640px;
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
